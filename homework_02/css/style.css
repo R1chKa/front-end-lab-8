@@ -20,9 +20,18 @@ p::first-letter {    					  /*          */
 }					 					  /*          */
 
 .tm-sidebar,.tm-content-box {             /*          */
-	box-shadow: 0 0 10px rgba(0,0,0,0.5)  /*  task 4  */       
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)  /*  task 4  */
 }                                         /*          */
                   
 .gallery-container a img {                /*          */
 	border: 2px solid silver;             /*  task 5  */
+}                                         /*          */
+
+h2.tm-section-title  {                    /*          */
+	color: gainsboro;                     /*  task 6  */
+	letter-spacing: 5px;                  /*          */
+}                                         /*          */
+
+h2 + p {                                  /*          */
+	font-style: italic;                   /*  task 7  */
 }                                         /*          */
