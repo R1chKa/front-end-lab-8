@@ -14,52 +14,52 @@ write your code here
 */
 
 
-p::first-letter {    					  		    /*          */
-	color: #76cdd7;  					  		    /*  task 3  */
-	font-size: 30px; 					  		    /*          */
-}					 					  		    /*          */
+p::first-letter {                                   /*          */
+	color: #76cdd7;                                 /*  task 3  */
+	font-size: 30px;                                /*          */
+}                                                   /*          */
 
-.tm-sidebar,.tm-content-box {             		    /*          */
-	box-shadow: 0 0 10px rgba(0,0,0,0.5)  		    /*  task 4  */
-}                                         		    /*          */
-                  
-.gallery-container a img {                		    /*          */
-	border: 2px solid silver;             		    /*  task 5  */
-}                                         		    /*          */
+.tm-sidebar,.tm-content-box {                       /*          */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)            /*  task 4  */
+}                                                   /*          */
+				  
+.gallery-container a img {                          /*          */
+	border: 2px solid silver;                       /*  task 5  */
+}                                                   /*          */
 
 div.carousel-content .flex-item h2:first-child {    /*          */
-	color: gainsboro;                     		    /*  task 6  */
-	letter-spacing: 5px;                  		    /*          */
-}                                         		    /*          */
+	color: gainsboro;                               /*  task 6  */
+	letter-spacing: 5px;                            /*          */
+}                                                   /*          */
 
-h2 + p {                                  		    /*          */
-	font-style: italic;                   		    /*  task 7  */
-}                                         		    /*          */
+h2 + p {                                            /*          */
+	font-style: italic;                             /*  task 7  */
+}                                                   /*          */
 
-p:not(.tm-banner-text) {         					/*          */
-	text-indent: 20px;     							/*  task 8  */
-	line-height: 35px;								/*          */
-}          											/*          */
+p:not(.tm-banner-text) {                            /*          */
+	text-indent: 20px;                              /*  task 8  */
+	line-height: 35px;                              /*          */
+}                                                   /*          */
 
-section.heading h2 {								/*          */
-	color: #76cdd7;									/*          */
-}													/*          */
-													/*          */
-section.heading a:visited {							/*          */
-	color: silver;									/*          */
-}													/*          */
-													/*          */
-section.heading a:hover {							/*          */
-	color: #76cdd7;									/*          */
-}													/*  task 9  */
-													/*          */
-.heading li:nth-child(n+2) a:after {				/*          */	
-	content: ".";									/*          */
-}													/*          */
-													/*          */
-.heading li:nth-child(-2n+3) a:after {				/*          */	
-	content: "New";									/*          */
-	color: red;										/*          */
-	font-size: 7pt;									/*          */
-	vertical-align: text-top;						/*          */
-}													/*          */
+section.heading h2 {                                /*          */
+	color: #76cdd7;                                 /*          */
+}                                                   /*          */
+
+section.heading a:visited {                         /*          */
+	color: silver;                                  /*          */
+}                                                   /*          */
+
+section.heading a:hover {                           /*          */
+	color: #76cdd7;                                 /*          */
+}                                                   /*  task 9  */
+
+.heading li:nth-child(n+2) a:after {                /*          */  
+	content: ".";                                   /*          */
+}                                                   /*          */
+
+.heading li:nth-child(-2n+3) a:after {              /*          */  
+	content: "New";                                 /*          */
+	color: red;                                     /*          */
+	font-size: 7pt;                                 /*          */
+	vertical-align: text-top;                       /*          */
+}                                                   /*          */
