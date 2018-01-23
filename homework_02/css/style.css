@@ -23,6 +23,6 @@ p::first-letter {    					  /*          */
 	box-shadow: 0 0 10px rgba(0,0,0,0.5)  /*  task 4  */       
 }                                         /*          */
                   
-.gallery-container img {                  /*          */
+.gallery-container a img {                /*          */
 	border: 2px solid silver;             /*  task 5  */
 }                                         /*          */
