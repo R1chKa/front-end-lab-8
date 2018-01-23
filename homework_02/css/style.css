@@ -14,24 +14,24 @@ write your code here
 */
 
 
-p::first-letter {    					  /*          */
-	color: #76cdd7;  					  /*  task 3  */
-	font-size: 30px; 					  /*          */
-}					 					  /*          */
+p::first-letter {    					  		    /*          */
+	color: #76cdd7;  					  		    /*  task 3  */
+	font-size: 30px; 					  		    /*          */
+}					 					  		    /*          */
 
-.tm-sidebar,.tm-content-box {             /*          */
-	box-shadow: 0 0 10px rgba(0,0,0,0.5)  /*  task 4  */
-}                                         /*          */
+.tm-sidebar,.tm-content-box {             		    /*          */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)  		    /*  task 4  */
+}                                         		    /*          */
                   
-.gallery-container a img {                /*          */
-	border: 2px solid silver;             /*  task 5  */
-}                                         /*          */
+.gallery-container a img {                		    /*          */
+	border: 2px solid silver;             		    /*  task 5  */
+}                                         		    /*          */
 
-h2.tm-section-title  {                    /*          */
-	color: gainsboro;                     /*  task 6  */
-	letter-spacing: 5px;                  /*          */
-}                                         /*          */
+div.carousel-content .flex-item h2:first-child {    /*          */
+	color: gainsboro;                     		    /*  task 6  */
+	letter-spacing: 5px;                  		    /*          */
+}                                         		    /*          */
 
-h2 + p {                                  /*          */
-	font-style: italic;                   /*  task 7  */
-}                                         /*          */
+h2 + p {                                  		    /*          */
+	font-style: italic;                   		    /*  task 7  */
+}                                         		    /*          */
