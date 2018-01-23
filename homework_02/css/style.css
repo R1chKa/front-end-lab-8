@@ -41,15 +41,19 @@ p:not(.tm-banner-text) {         					/*          */
 	line-height: 35px;								/*          */
 }          											/*          */
 
+section.heading h2 {								/*          */
+	color: #76cdd7;									/*          */
+}													/*          */
+													/*          */
 section.heading a:visited {							/*          */
 	color: silver;									/*          */
 }													/*          */
 													/*          */
 section.heading a:hover {							/*          */
 	color: #76cdd7;									/*          */
-}													/*          */
+}													/*  task 9  */
 													/*          */
-.heading li:nth-child(n+2) a:after {				/*  task 9  */	
+.heading li:nth-child(n+2) a:after {				/*          */	
 	content: ".";									/*          */
 }													/*          */
 													/*          */
@@ -58,4 +62,4 @@ section.heading a:hover {							/*          */
 	color: red;										/*          */
 	font-size: 7pt;									/*          */
 	vertical-align: text-top;						/*          */
-}													
+}													/*          */
