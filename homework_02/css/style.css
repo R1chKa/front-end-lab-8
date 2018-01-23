@@ -35,3 +35,8 @@ div.carousel-content .flex-item h2:first-child {    /*          */
 h2 + p {                                  		    /*          */
 	font-style: italic;                   		    /*  task 7  */
 }                                         		    /*          */
+
+p {         										/*          */
+	text-indent: 20px;     							/*  task 8  */
+	line-height: 35px;     							/*          */
+}          											/*          */
