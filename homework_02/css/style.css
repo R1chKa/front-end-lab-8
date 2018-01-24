@@ -72,7 +72,12 @@ write your code here
 	}                                                         /*          */
 
 	.tm-sidebar, .tm-content-box {                            /*          */
-		box-shadow: 0 0 10px rgba(0,0,0,0.5)                  /*  task 4  */
+		box-shadow: 0 0 10px rgba(0,0,0,0.5)                  /*          */
+	}                                                         /*          */
+
+	section.blocks .tm-team-description-container  {          /*  task 4  */
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);                 /*          */
+		/*display: inline-block;    ??                        /*          */
 	}                                                         /*          */
 
 	.gallery-container a img {                                /*          */
@@ -88,7 +93,7 @@ write your code here
 		font-style: italic;                                   /*  task 7  */
 	}                                                         /*          */
 
-	section .tm-content-box .tm-team-description-container p{                                  /*          */
+	section .tm-content-box .tm-team-description-container p{ /*          */
 		text-indent: 20px;                                    /*  task 8  */
 		line-height: 35px;                                    /*          */
 	}                                                         /*          */
