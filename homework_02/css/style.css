@@ -88,7 +88,7 @@ write your code here
 		font-style: italic;                                   /*  task 7  */
 	}                                                         /*          */
 
-	p:not(.tm-banner-text) {                                  /*          */
+	section .tm-content-box .tm-team-description-container p{                                  /*          */
 		text-indent: 20px;                                    /*  task 8  */
 		line-height: 35px;                                    /*          */
 	}                                                         /*          */
