@@ -43,6 +43,7 @@ p:not(.tm-banner-text) {                            /*          */
 
 section.heading h2 {                                /*          */
 	color: #76cdd7;                                 /*          */
+	text-align: center;                             /*          */
 }                                                   /*          */
 
 section.heading a:visited {                         /*          */
@@ -50,14 +51,14 @@ section.heading a:visited {                         /*          */
 }                                                   /*          */
 
 section.heading a:hover {                           /*          */
-	color: #76cdd7;                                 /*          */
-}                                                   /*  task 9  */
+	color: #76cdd7;                                 /*  task 9  */
+}                                                   /*          */
 
-.heading li:nth-child(n+2) a:after {                /*          */  
+.heading li:nth-child(n+2) a:after {                /*          */
 	content: ".";                                   /*          */
 }                                                   /*          */
 
-.heading li:nth-child(-2n+3) a:after {              /*          */  
+.heading li:nth-child(-2n+3) a:after {              /*          */
 	content: "New";                                 /*          */
 	color: red;                                     /*          */
 	font-size: 7pt;                                 /*          */
