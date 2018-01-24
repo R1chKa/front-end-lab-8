@@ -81,14 +81,46 @@ background-color: #f2f2f2;                          /*          */
 }                                                   /************/
 
 .tm-main-nav li{                                    /*          */
-    border-bottom: 1px solid silver;                /*          */
+	border-bottom: 1px solid silver;                /*          */
 }                                                   /* task 11  */
 
 .tm-main-nav li:last-child{                         /*          */
-    border: none;                                   /*          */
+	border-bottom: none;                            /*          */
 }                                                   /*          */
 
 input.form-control[type="text"],                    /*          */
 button.submit-btn[type="submit"] {                  /* task 12  */
 	color: red;                                     /*          */
 }                                                   /*          */
+
+@media (max-width: 1140px), (max-height: 835px) {   /************/
+	.tm-sidebar{                                    /*          */
+		overflow: hidden;                           /*          */
+		position: fixed;                            /*          */
+		top:0;                                      /*          */
+		left:0;                                     /*          */
+		width: 100%;                                /*          */
+		margin-bottom:300px;                        /*          */
+		z-index:99999999;                           /*          */
+	}                                               /*          */
+
+	.tm-main-nav ul li{                             /*          */
+	display: inline;                                /*  extra   */
+	text-align: center;                             /*          */
+	font-size: 16px;                                /* task 13  */
+	border: none;                                   /*          */
+	}                                               /*          */
+
+	.tm-main-nav ul li a{                           /*          */
+		display:inline;                             /*          */
+		width: 50px;                                /*          */
+	}                                               /*          */
+
+	.tm-main-content{                               /*          */
+		margin-left:0;                              /*          */
+	}                                               /*          */
+
+	img {                                           /*          */
+		margin: 0 auto;                             /*          */
+	}                                               /*          */
+}                                                   /************/
