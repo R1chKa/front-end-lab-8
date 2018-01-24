@@ -71,6 +71,7 @@ write your code here
 
 	footer.tm-footer p {                                  /*          */
 		margin-top: -20px;                                /*          */
+		margin-bottom: -20px;                             /*          */
 	}                                                     /*          */
 }                                                         /************/
 
