@@ -111,11 +111,11 @@ write your code here
 		color: #76cdd7;                                       /*  task 9  */
 	}                                                         /*          */
 
-	.heading li:nth-child(n+2) a:after {                      /*          */
+	.heading li:nth-child(n+2):after {                      /*          */
 		content: ".";                                         /*          */
 	}                                                         /*          */
 
-	.heading li:nth-child(-2n+3) a:after {                    /*          */
+	.heading li:nth-child(-2n+3):after {                    /*          */
 		content: "New";                                       /*          */
 		color: red;                                           /*          */
 		font-size: 7pt;                                       /*          */
