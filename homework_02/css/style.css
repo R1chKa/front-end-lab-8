@@ -64,7 +64,24 @@ write your code here
 }                                                             /************/
 
 
-@media screen {
+@media screen {                                               /************/
+
+	#about .box {                                             /*          */
+		border-top: 0 !important;                             /*          */
+		border-left: 0 !important;                            /*          */
+	}                                                         /*          */
+
+	section #about .box:nth-child(-n+6) {                     /*          */
+		border-bottom: 1px solid silver !important;           /*          */
+	}                                                         /*  task 2  */
+
+	section #about .box:nth-child(-n+3) {                     /*          */
+		border-top: 1px solid silver !important;              /*          */
+	}                                                         /*          */
+
+	section #about .box:nth-child(3n+1) {                     /*          */
+	border-left: 1px solid silver !important;                 /*          */
+	}                                                         /************/
 
 	p::first-letter {                                         /*          */
 		color: #76cdd7;                                       /*  task 3  */
@@ -75,11 +92,11 @@ write your code here
 		box-shadow: 0 0 10px rgba(0,0,0,0.5)                  /*          */
 	}                                                         /*          */
 
-	section.blocks .tm-team-description-container  {          /*          */
+	section.blocks .tm-team-description-container {           /*          */
 		box-shadow: 0 0 10px rgba(0,0,0,0.5);                 /*  task 4  */
 	}                                                         /*          */
 
-	section.blocks div.tm-team-description-container{         /*          */
+	section.blocks div.tm-team-description-container {        /*          */
 		max-width: 100%;                                      /*          */
 	}                                                         /************/
 
@@ -96,14 +113,14 @@ write your code here
 		font-style: italic;                                   /*  task 7  */
 	}                                                         /*          */
 
-	section .tm-content-box .tm-team-description-container p{ /*          */
+	section .tm-content-box .tm-team-description-container p {/*          */
 		text-indent: 20px;                                    /*  task 8  */
 		line-height: 35px;                                    /*          */
 	}                                                         /*          */
 
 	section.heading h2 {                                      /************/
 		color: #76cdd7;                                       /*          */
-		text-align: center;         	                          /*          */
+		text-align: center;         	                      /*          */
 	}                                                         /*          */
 
 	section.heading a:visited {                               /*          */
@@ -140,11 +157,11 @@ write your code here
 		padding-top: 7px;                                     /*          */
 	}                                                         /************/
 
-	.tm-main-nav li{                                          /*          */
+	.tm-main-nav li {                                         /*          */
 		border-bottom: 1px solid silver;                      /*          */
 	}                                                         /* task 11  */
 
-	.tm-main-nav li:last-child{                               /*          */
+	.tm-main-nav li:last-child {                              /*          */
 		border-bottom: none;                                  /*          */
 	}                                                         /*          */
 
@@ -155,7 +172,8 @@ write your code here
 }
 
 @media (max-width: 1140px), (max-height: 835px) {             /************/
-	.tm-sidebar{                                              /*          */
+	
+	.tm-sidebar {                                             /*          */
 		overflow: hidden;                                     /*          */
 		position: fixed;                                      /*          */
 		top: 0;                                               /*          */
@@ -165,19 +183,19 @@ write your code here
 		z-index: 99999999;                                    /*          */
 	}                                                         /*          */
 
-	.tm-main-nav ul li{                                       /*          */
+	.tm-main-nav ul li {                                      /*          */
 		display: inline;                                      /*  extra   */
 		text-align: center;                                   /*          */
 		font-size: 16px;                                      /* task 13  */
 		border: none;                                         /*          */
 	}                                                         /*          */
 
-	.tm-main-nav ul li a{                                     /*          */
+	.tm-main-nav ul li a {                                    /*          */
 		display: inline;                                      /*          */
 		width: 50px;                                          /*          */
 	}                                                         /*          */
 
-	.tm-main-content{                                         /*          */
+	.tm-main-content {                                        /*          */
 		margin-left: 0;                                       /*          */
 	}                                                         /*          */
 
