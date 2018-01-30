@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif; }
+
+.container {
+  width: 84%;
+  margin: 0 auto; }
+  .container header {
+    background-image: url(../img/apples.jpg);
+    background-position: top;
+    background-repeat: np-repeat;
+    background-size: cover;
+    padding: 0 150px;
+    height: 740px; }
+    .container header .header-name {
+      letter-spacing: 3px;
+      font-size: 15px;
+      display: inline-block;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 35px 0; }
+    .container header nav {
+      float: right;
+      margin-right: 70px; }
+      .container header nav ul {
+        list-style-type: none; }
+        .container header nav ul li {
+          display: inline-block;
+          margin: 35px 0;
+          margin-left: 40px;
+          font-size: 14px; }
+          .container header nav ul li a {
+            color: #ffffff;
+            text-decoration: none; }
+    .container header h1 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 9px;
+      margin-top: 220px;
+      color: #fff;
+      font-size: 50px;
+      font-weight: 100; }
+      .container header h1 span {
+        font-size: 95px;
+        font-family: serif; }
+      .container header h1 sup {
+        font-size: 25px;
+        letter-spacing: 1px; }
+    .container header p {
+      text-align: center;
+      color: #fff;
+      font-size: 12px; }
+    .container header button {
+      display: block;
+      margin: 145px auto;
+      padding: 20px 80px 20px 80px;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: 2px solid #fff;
+      font-size: 14px; }
