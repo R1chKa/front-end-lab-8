@@ -1,0 +1,163 @@
+$bodyBackground: null !default;
+$bodyFontColor: null !default;
+$contentBackground: null !default;
+$headerColor: null !default;
+$borderImgColor: null !default;
+$outlineImgColor: null !default;
+$briefBackground: null !default;
+$briefWidht: null !default;
+$briefMarginBottom: null !default;
+$tableBackgroundTH: null !default;
+$tableBackgroundTD: null !default;
+$tableBorderBottom: null !default;
+$linkColor: null !default;
+$formTextColor: null !default;
+$formPlaceholderColor: null !default;
+$formInputBorderColor: null !default;
+$formButtonColor: null !default;
+$buttonBorderColor: null !default;
+
+@mixin imgBorder {
+	border: 3px solid $borderImgColor;
+	outline: 3px solid $outlineImgColor;
+}
+
+@mixin imgLeft {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+@mixin imgRight {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+@mixin inputStyle {
+	width: 100%;
+	border: 1px solid $formInputBorderColor;
+	&::placeholder {
+		color: $formPlaceholderColor;
+	}
+}
+
+body {
+	background: $bodyBackground;
+	color: $bodyFontColor;
+	font-size: 16px;
+
+	#content {
+		width: 960px;
+		margin: 0 auto;
+		padding: 20px;
+		background: $contentBackground;
+	}
+
+	h1 {
+		text-align: center;
+		margin-top: 0;
+		color: $headerColor;
+	}
+
+	h2 {
+		color: $headerColor;
+		margin-top: 0;
+	}
+
+	.img-left {
+		@include imgBorder;
+		@include imgLeft;
+	}
+
+	.img-right {
+		@include imgBorder;
+		@include imgRight;
+	}
+
+	.brief {
+		width: $briefWidht;
+		float: left;
+		padding: 15px;
+		margin-right: 20px;
+		margin-bottom: $briefMarginBottom;
+		color: #000000;
+		background: $briefBackground;
+	}
+
+	a:link {
+		color: $linkColor;
+	}
+
+	table {
+		border-collapse: collapse;
+		margin-bottom: 40px;
+
+		caption {
+			text-align: right;
+			color: #000000;
+		}
+
+		th {
+			padding: 10px 10px 10px 20px;
+			text-align: left;
+			text-transform: uppercase;
+			font-weight: normal;
+			color: #000000;
+			background: $tableBackgroundTH;
+
+			&:nth-child(-n + 2) {
+				border-right: 1px solid #ffffff;
+			}
+		}
+
+		td {
+			padding: 10px 10px 10px 20px;
+			background: $tableBackgroundTD;
+			border-bottom: 1px solid $tableBorderBottom;
+		}
+	}
+
+	form {
+		margin-top: -15px;
+
+		input {
+			display: inline-block;
+			margin-bottom: 15px;
+			padding: 5px 5px 5px 5px;
+			@include inputStyle;
+		}
+
+		textarea {
+			overflow: hidden;
+			@include inputStyle;
+		}
+
+		p {
+			margin-bottom: 5px;
+			margin-top: 5px;
+			text-transform: uppercase;
+			color: $formTextColor;
+		}
+
+		.input-left {
+			float: left;
+			width: 49%;
+		}
+
+		.input-right {
+			float: right;
+			width: 49%;
+		}
+
+		button {
+			color: $formButtonColor;
+			text-transform: uppercase;
+			font-size: 18px;
+			background: $contentBackground;
+			border: 1px solid $buttonBorderColor;
+			padding: 10px 50px 10px 50px;
+			margin-top: 15px;
+		}
+	}
+}

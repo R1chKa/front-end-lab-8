@@ -1,0 +1,92 @@
+body {
+  background: #dcbb9a;
+  color: #000000;
+  font-size: 16px; }
+  body #content {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; }
+  body h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #893c00; }
+  body h2 {
+    color: #893c00;
+    margin-top: 0; }
+  body .img-left {
+    border: 3px solid #ffffff;
+    outline: 3px solid #893c00;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px; }
+  body .img-right {
+    border: 3px solid #ffffff;
+    outline: 3px solid #893c00;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px; }
+  body .brief {
+    width: 40%;
+    float: left;
+    padding: 15px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+    background: #fadcba; }
+  body a:link {
+    color: #3d70a1; }
+  body table {
+    border-collapse: collapse;
+    margin-bottom: 40px; }
+    body table caption {
+      text-align: right;
+      color: #000000; }
+    body table th {
+      padding: 10px 10px 10px 20px;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #000000;
+      background: #e0e0e0; }
+      body table th:nth-child(-n+2) {
+        border-right: 1px solid #ffffff; }
+    body table td {
+      padding: 10px 10px 10px 20px;
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0; }
+  body form {
+    margin-top: -15px; }
+    body form input {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 5px 5px 5px 5px;
+      width: 100%;
+      border: 1px solid #a6a6a6; }
+      body form input::placeholder {
+        color: #a6a6a6; }
+    body form textarea {
+      overflow: hidden;
+      width: 100%;
+      border: 1px solid #a6a6a6; }
+      body form textarea::placeholder {
+        color: #a6a6a6; }
+    body form p {
+      margin-bottom: 5px;
+      margin-top: 5px;
+      text-transform: uppercase;
+      color: #a6a6a6; }
+    body form .input-left {
+      float: left;
+      width: 49%; }
+    body form .input-right {
+      float: right;
+      width: 49%; }
+    body form button {
+      color: #3d70a1;
+      text-transform: uppercase;
+      font-size: 18px;
+      background: #ffffff;
+      border: 1px solid #3d70a1;
+      padding: 10px 50px 10px 50px;
+      margin-top: 15px; }
