@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .container {
-  width: 84%;
+  width: 1500px;
   margin: 0 auto; }
   .container header {
     background-image: url(../img/apples.jpg);
@@ -20,7 +20,7 @@ body {
       letter-spacing: 3px;
       font-size: 15px;
       display: inline-block;
-      color: #fff;
+      color: #ffffff;
       text-transform: uppercase;
       margin: 35px 0; }
     .container header nav {
@@ -31,7 +31,7 @@ body {
         .container header nav ul li {
           display: inline-block;
           margin: 35px 0;
-          margin-left: 40px;
+          margin-le: 40px;
           font-size: 14px; }
           .container header nav ul li a {
             color: #ffffff;
@@ -41,7 +41,7 @@ body {
       text-transform: uppercase;
       letter-spacing: 9px;
       margin-top: 220px;
-      color: #fff;
+      color: #ffffff;
       font-size: 50px;
       font-weight: 100; }
       .container header h1 span {
@@ -52,7 +52,7 @@ body {
         letter-spacing: 1px; }
     .container header p {
       text-align: center;
-      color: #fff;
+      color: #ffffff;
       font-size: 12px; }
     .container header button {
       display: block;
@@ -60,6 +60,22 @@ body {
       padding: 20px 80px 20px 80px;
       cursor: pointer;
       background: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      border: 2px solid #fff;
+      color: #ffffff;
+      border: 2px solid #ffffff;
       font-size: 14px; }
+  .container .header-columns {
+    background: #fff;
+    padding: 80px 130px 130px 130px; }
+    .container .header-columns .columns p {
+      margin-top: 50px;
+      font-weight: 500; }
+      .container .header-columns .columns p:nth-child(1) {
+        float: left;
+        width: 40%;
+        font-size: 23px;
+        line-height: 40px;
+        margin-left: 30px; }
+      .container .header-columns .columns p:nth-child(2) {
+        float: right;
+        width: 50%;
+        font-size: 15px; }
