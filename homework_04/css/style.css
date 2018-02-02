@@ -96,11 +96,11 @@ body {
     background: #f3f3f3;
     padding: 100px; }
     .container .articles .wrapper {
-      margin: 0 auto;
+      margin-left: 16%;
       display: grid;
       grid-gap: 30px;
-      grid-template-columns: 30% 30% 30%;
-      grid-template-rows: [row] 150px [row] 300px [row] 300px [row] 300px; }
+      grid-template-columns: 25% 25% 25%;
+      grid-template-rows: [row] 150px [row] 15vw [row] 15vw; }
       .container .articles .wrapper .box {
         position: relative;
         color: #ffffff;
@@ -112,7 +112,7 @@ body {
           position: absolute;
           right: 0;
           margin-right: 20px;
-          padding: 10px;
+          padding: 0.5vw;
           font-weight: 600;
           background-color: rgba(0, 0, 0, 0.5);
           border: 2px solid #ffffff; }
@@ -160,41 +160,39 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 -180px 180px -150px black inset; }
-      .container .articles .wrapper .e {
-        grid-column: 1 / 4;
-        grid-row: row 4;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 70px;
-        padding: 60px;
-        font-size: 25px;
-        color: #000000;
-        background-color: #ffffff;
-        border: 0; }
-        .container .articles .wrapper .e .newsletter-inp-btn {
-          display: inline; }
-          .container .articles .wrapper .e .newsletter-inp-btn input {
-            width: 400px;
-            padding: 20px;
-            border: 1px solid rgba(0, 0, 0, 0.85);
-            margin-right: -8px;
-            margin-left: 50px;
-            background: #f3f3f3;
-            font-size: 14px; }
-            .container .articles .wrapper .e .newsletter-inp-btn input::placeholder {
-              color: #000000;
-              font-weight: 600; }
-          .container .articles .wrapper .e .newsletter-inp-btn button {
-            padding: 20px 60px 20px 60px;
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.85);
-            border: 1px solid rgba(0, 0, 0, 0.85);
-            color: #ffffff;
-            font-size: 14px; }
-            .container .articles .wrapper .e .newsletter-inp-btn button:hover {
-              transition: color 0.3s;
-              color: #9e9e9e;
-              background: #000000; }
+    .container .articles .newsletter-inp-btn {
+      background: #fff;
+      margin-top: 100px;
+      padding: 100px 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .container .articles .newsletter-inp-btn p {
+        margin-bottom: 0;
+        font-size: 1.2vw; }
+        .container .articles .newsletter-inp-btn p span {
+          font-weight: bold; }
+      .container .articles .newsletter-inp-btn .email-form input {
+        width: 20vw;
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.85);
+        background: #f3f3f3;
+        font-size: 14px; }
+        .container .articles .newsletter-inp-btn .email-form input::placeholder {
+          color: #000000;
+          font-weight: 600; }
+      .container .articles .newsletter-inp-btn .email-form button {
+        padding: 15px 45px 15px 45px;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.85);
+        border: 1px solid rgba(0, 0, 0, 0.85);
+        color: #ffffff;
+        font-size: 14px;
+        float: right; }
+        .container .articles .newsletter-inp-btn .email-form button:hover {
+          transition: color 0.3s;
+          color: #9e9e9e;
+          background: #000000; }
   .container .footer-columns {
     background: #ffffff;
     padding: 100px;
