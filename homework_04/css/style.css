@@ -7,22 +7,24 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .container {
-  width: 1500px;
+  max-width: 100%;
   margin: 0 auto; }
   .container header {
     background-image: url(../img/apples.jpg);
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 150px;
-    height: 740px; }
+    background-attachment: fixed;
+    padding: 0 100px;
+    height: 100vh;
+    left: 0; }
     .container header .header-name {
       letter-spacing: 3px;
       font-size: 15px;
       display: inline-block;
       color: #ffffff;
       text-transform: uppercase;
-      margin: 40px 0; }
+      margin: 25px 0 25px 0; }
     .container header nav {
       float: right;
       margin-right: 40px; }
@@ -30,7 +32,7 @@ body {
         list-style-type: none; }
         .container header nav ul li {
           display: inline-block;
-          margin: 40px 30px 35px 30px;
+          margin: 25px 20px 25px 20px;
           font-size: 14px; }
           .container header nav ul li a {
             color: #ffffff;
