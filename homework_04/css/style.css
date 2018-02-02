@@ -202,31 +202,34 @@ body {
       color: #9e9e9e;
       display: grid;
       grid-gap: 30px;
-      grid-template-columns: 22% 22% 22% 22%;
-      grid-template-rows: [row] 150px; }
+      grid-template-columns: 22% 22% 20% 27%;
+      grid-template-rows: [row] 150px;
+      font-size: 13px; }
       .container .footer-columns .grid-columns h2 {
         margin-bottom: 20px;
         color: #000000; }
       .container .footer-columns .grid-columns .f-about {
-        padding-right: 50px; }
+        padding-right: 40px; }
       .container .footer-columns .grid-columns .f-contact {
         line-height: 30px; }
         .container .footer-columns .grid-columns .f-contact a {
           color: #9e9e9e;
           text-decoration: none; }
-      .container .footer-columns .grid-columns .f-tweets blockquote {
-        font-style: italic;
-        padding-bottom: 5px; }
-        .container .footer-columns .grid-columns .f-tweets blockquote:before {
-          content: '"'; }
-        .container .footer-columns .grid-columns .f-tweets blockquote:after {
-          content: '"'; }
-      .container .footer-columns .grid-columns .f-tweets p {
-        color: #e4e4e4; }
+      .container .footer-columns .grid-columns .f-tweets {
+        margin: 0 20px 0 -20px; }
+        .container .footer-columns .grid-columns .f-tweets blockquote {
+          font-style: italic;
+          padding-bottom: 5px; }
+          .container .footer-columns .grid-columns .f-tweets blockquote:before {
+            content: '"'; }
+          .container .footer-columns .grid-columns .f-tweets blockquote:after {
+            content: '"'; }
+        .container .footer-columns .grid-columns .f-tweets p {
+          color: #e4e4e4; }
       .container .footer-columns .grid-columns .f-newsletter p {
         padding-bottom: 30px; }
       .container .footer-columns .grid-columns .f-newsletter input {
-        width: 129px;
+        width: 5.4vw;
         padding: 15px;
         border: 2px solid rgba(0, 0, 0, 0.85);
         margin-right: -4px;
@@ -235,7 +238,7 @@ body {
         .container .footer-columns .grid-columns .f-newsletter input::placeholder {
           font-style: italic; }
       .container .footer-columns .grid-columns .f-newsletter button {
-        padding: 17px 30px 17px 30px;
+        padding: 17px 20px 17px 20px;
         cursor: pointer;
         background: rgba(0, 0, 0, 0.85);
         border: 1px solid rgba(0, 0, 0, 0.85);
