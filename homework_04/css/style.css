@@ -61,6 +61,8 @@ body {
       text-align: center;
       color: #ffffff;
       font-size: 15px; }
+    .container header a {
+      text-decoration: none; }
     .container header button {
       display: block;
       margin: 175px auto;
