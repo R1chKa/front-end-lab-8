@@ -104,3 +104,55 @@ body {
     margin: 15px 0;
     font-size: 0.9em; }
 
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    text-align: center; }
+
+  .main-container header .container {
+    display: block; }
+    .main-container header .container .header-logo {
+      margin: 15px auto; }
+    .main-container header .container nav ul {
+      margin: 15px auto;
+      width: 50%; }
+      .main-container header .container nav ul li {
+        margin: 0 auto; }
+        .main-container header .container nav ul li a {
+          font-size: 1em; }
+  .main-container main .banner .container .banner-text {
+    width: 65%;
+    margin: 60px auto; }
+    .main-container main .banner .container .banner-text h1 {
+      font-size: 1.5em; }
+  .main-container main .articles {
+    padding: 0 15px; }
+    .main-container main .articles .container {
+      display: grid;
+      grid-template-columns: 49% 49%;
+      grid-template-rows: 33% 33% 33%;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      margin-top: 15px; }
+      .main-container main .articles .container .box .img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px 30px 0px 30px; }
+      .main-container main .articles .container .box .text {
+        padding-left: 10px; }
+        .main-container main .articles .container .box .text h2 {
+          padding-bottom: 5px; }
+        .main-container main .articles .container .box .text p {
+          padding-bottom: 5px;
+          margin: 0; }
+  .main-container footer .container {
+    display: block; }
+    .main-container footer .container nav ul {
+      width: 350px;
+      margin: 0 auto; }
+      .main-container footer .container nav ul li {
+        margin: 15px auto; }
+    .main-container footer .container p {
+      padding-bottom: 15px;
+      margin: 0; } }
