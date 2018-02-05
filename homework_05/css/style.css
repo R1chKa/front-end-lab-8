@@ -156,3 +156,55 @@ body {
     .main-container footer .container p {
       padding-bottom: 15px;
       margin: 0; } }
+@media (max-width: 575px) {
+  .main-container header .container .header-logo {
+    width: 35%;
+    margin: 5px auto; }
+  .main-container header .container nav ul {
+    display: block;
+    width: 100%;
+    margin: 0; }
+    .main-container header .container nav ul li {
+      background-color: #bdbaba;
+      text-align: left;
+      border-top: 2px solid #8e8d8d;
+      padding: 15px 20px; }
+      .main-container header .container nav ul li a {
+        font-size: 1.2em; }
+  .main-container main .banner {
+    height: 300px;
+    border-top: 1px solid #bdbaba; }
+    .main-container main .banner .container {
+      width: 90%; }
+      .main-container main .banner .container .banner-text {
+        margin-top: 185px;
+        line-height: 1.2;
+        width: 100%;
+        background-color: #39c2d7; }
+        .main-container main .banner .container .banner-text h1 {
+          font-size: 1.2em;
+          text-align: left;
+          padding: 10px; }
+  .main-container main .articles {
+    padding: 0; }
+    .main-container main .articles .container {
+      width: 90%;
+      display: block; }
+      .main-container main .articles .container .box {
+        margin-top: 20px; }
+        .main-container main .articles .container .box .img {
+          padding: 15px 30px 0px 30px; }
+  .main-container footer {
+    margin-top: 20px; }
+    .main-container footer .container nav ul {
+      display: block;
+      padding-top: 10px; }
+      .main-container footer .container nav ul li {
+        padding-top: 5px;
+        margin: 0; }
+        .main-container footer .container nav ul li a {
+          font-size: 0.9em; }
+    .main-container footer .container p {
+      padding: 20px;
+      margin: 0;
+      font-size: 0.9em; } }
