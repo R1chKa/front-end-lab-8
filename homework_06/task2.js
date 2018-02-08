@@ -14,7 +14,7 @@ if ((euro > 0) && (usd > 0)) {
     var uahFromUsd = usd * uahToUsd;
     var usdFromEuro = uahToEuro / uahToUsd;
 
-    console.log(euro + ' euros are equal ' + uahFromEuro.toFixed(2) + ' UAH, ' + usd + ' dollars are equal ' + uahFromUsd.toFixed(2) + ', one euro is equal ' + usdFromEuro.toFixed(2) + ' dollars');
+    console.log(euro + ' euros are equal ' + parseFloat(uahFromEuro.toFixed(2)) + ' UAH, ' + usd + ' dollars are equal ' + parseFloat(uahFromUsd.toFixed(2)) + ', one euro is equal ' + parseFloat(usdFromEuro.toFixed(2)) + ' dollars');
 
 } else {
     console.log('Incorrect data!')

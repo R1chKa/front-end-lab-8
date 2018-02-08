@@ -41,7 +41,7 @@ if ((a > 0) && (b > 0) && (c > 0)) {
         else if (a != b && a != c && b != c) {
             type = 'scalene triangle';
         }
-        console.log('Type of triangle is', type, 'and square is', s.toFixed(2));
+        console.log('Type of triangle is', type, 'and square is', parseFloat(s.toFixed(2)));
 
     } else {
         console.log('Incorrect data!');
