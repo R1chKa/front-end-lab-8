@@ -44,11 +44,11 @@ if ((a > 0) && (b > 0) && (c > 0)) {
         console.log('Type of triangle is', type, 'and square is', parseFloat(s.toFixed(2)));
 
     } else {
-        console.log('Incorrect data!');
-        console.log('One side = or > than sum of two others');
+        console.error('Incorrect data!');
+        console.error('One side = or > than sum of two others');
     }
 
 } else {
-    console.log('Incorrect data!');
-    console.log('One side = or < than 0');
+    console.error('Incorrect data!');
+    console.error('One side = or < than 0');
 }

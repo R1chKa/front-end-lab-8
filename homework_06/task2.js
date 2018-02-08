@@ -17,6 +17,6 @@ if ((euro > 0) && (usd > 0)) {
     console.log(euro + ' euros are equal ' + parseFloat(uahFromEuro.toFixed(2)) + ' UAH, ' + usd + ' dollars are equal ' + parseFloat(uahFromUsd.toFixed(2)) + ', one euro is equal ' + parseFloat(usdFromEuro.toFixed(2)) + ' dollars');
 
 } else {
-    console.log('Incorrect data!')
-    console.log('One value = or < than 0');
+    console.error('Incorrect data!')
+    console.error('One value = or < than 0');
 }
