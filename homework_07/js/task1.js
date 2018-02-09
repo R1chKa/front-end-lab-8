@@ -1,6 +1,7 @@
 var n = prompt('Enter natural number 0 < N <= 20', null);
 var space, spaces;
 var symbol, symbols;
+var pyramid = '';
 
 if ((n > 0) && (n <= 20) && (parseInt(n) == n)) {
 
@@ -20,8 +21,9 @@ if ((n > 0) && (n <= 20) && (parseInt(n) == n)) {
             symbols += '[~]';
         }
 
-        console.log(spaces + symbols);
+        pyramid += spaces + symbols + '\n';
     }
+    console.log(pyramid);
 
 } else {
     console.error('Incorrect number!');
