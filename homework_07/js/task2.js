@@ -52,6 +52,7 @@ if (startGame == true) {
                         prize = 0;
                         attPrize = 10;
                         att = 3;
+                        range = 5;
                         i = 1;
                     } else { // end
                         reStart = false;
