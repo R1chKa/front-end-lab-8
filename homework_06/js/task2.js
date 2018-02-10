@@ -3,8 +3,8 @@
 // uah > usd = 27.460866
 // uah > euro = 33.856502
 
-var euro = parseFloat(prompt('Enter emount of EURO', null));
-var usd = parseFloat(prompt('Enter emount of USD', null));
+var euro = Number(prompt('Enter emount of EURO', null));
+var usd = Number(prompt('Enter emount of USD', null));
 
 var uahToUsd = 27.460866;
 var uahToEuro = 33.856502;

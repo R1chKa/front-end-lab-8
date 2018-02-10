@@ -1,8 +1,9 @@
 var type;
 
-var a = parseFloat(prompt('Enter the length of first side', null));
-var b = parseFloat(prompt('Enter the length of second side', null));
-var c = parseFloat(prompt('Enter the length of third side', null));
+var a = Number(prompt('Enter the length of first side', null));
+var b = Number(prompt('Enter the length of second side', null));
+var c = Number(prompt('Enter the length of third side', null));
+console.log(a, b, c);
 // a - first side, b - second side, c - third side
 
 if ((a > 0) && (b > 0) && (c > 0)) {
