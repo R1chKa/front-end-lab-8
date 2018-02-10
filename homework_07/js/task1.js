@@ -1,4 +1,4 @@
-var n = prompt('Enter natural number 0 < N <= 20', null);
+var n = Number(prompt('Enter natural number 0 < N <= 20', null));
 var space, spaces;
 var symbol, symbols;
 var pyramid = '';
