@@ -17,11 +17,9 @@ if (startGame) {
         while (i <= att) {
             if (i == att) {
                 firstAttPrize = attPrize;
-                console.log(firstAttPrize);
             }
 
             let randomNum = Math.floor(Math.random() * range) + 1;
-            console.log(randomNum);
             let userNum = parseInt(prompt('Enter a number from 0 to ' + range +
                 '\nAttempts left: ' + i +
                 '\nTotal prize: ' + prize + '$' +
