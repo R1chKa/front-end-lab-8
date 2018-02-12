@@ -1,5 +1,5 @@
 let prize = 0,
-    range = 5,
+    range = 6,
     attPrize = 10;
 let reStart = true,
     firstAttPrize;
@@ -19,11 +19,11 @@ if (startGame) {
                 firstAttPrize = attPrize;
             }
 
-            let randomNum = Math.floor(Math.random() * range) + 1;
-            let userNum = parseInt(prompt('Enter a number from 0 to ' + range +
+            let randomNum = Math.floor(Math.random() * range);
+            let userNum = Number(parseInt(prompt('Enter a number from 0 to ' + range +
                 '\nAttempts left: ' + i +
                 '\nTotal prize: ' + prize + '$' +
-                '\nPossible prize on current attempt: ' + attPrize + '$'));
+                '\nPossible prize on current attempt: ' + attPrize + '$')));
 
             if (userNum == randomNum) { // win
                 prize += attPrize;
@@ -36,7 +36,7 @@ if (startGame) {
                     break;
                 } else { // end
                     reStart = false;
-                    console.log('Thank you for a game. Come again');
+                    console.log('GG. Come again');
                     break;
                 }
 
@@ -60,7 +60,7 @@ if (startGame) {
 
                     } else { // end
                         reStart = false;
-                        console.log('Thank you for a game. Come again');
+                        console.log('GG. Come again');
                         break;
                     }
                     break;
