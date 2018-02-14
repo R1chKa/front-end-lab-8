@@ -1,12 +1,13 @@
 function getMin() {
     let min = Infinity;
     for (let i = 0; i < arguments.length; i++) {
-        // if (arguments[i]) { TODO: check to integer number
-        if (arguments[i] < min) {
-            min = arguments[i];
+        if (typeof arguments[i] === 'number' && (arguments[i] % 1) === 0) {
+            if (arguments[i] < min) {
+                min = arguments[i];
+            }
+        } else {
+            return console.error('Use integer numbers');
         }
-        // } else {
-        // 	console.error('Use integer numbers');// }
+        return min;
     }
-    return min;
 }
