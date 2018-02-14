@@ -8,6 +8,6 @@ function getMin() {
         } else {
             return console.error('Use integer numbers');
         }
-        return min;
     }
+    return min;
 }
