@@ -9,5 +9,4 @@ function isPrime(value) {
     } else {
         return console.error('Use integer numbers');
     }
-
 }
