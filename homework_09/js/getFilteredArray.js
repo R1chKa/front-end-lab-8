@@ -1,7 +1,3 @@
-function predicateFunc(num) {
-  return num > 3;
-}
-
 function getFilteredArray(arr, func) {
   let arrNew = [];
   forEach(arr, function(el) {
