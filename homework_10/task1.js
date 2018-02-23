@@ -6,6 +6,8 @@ function debounce(callback, delay) {
   };
 }
 
+// Example
+
 let iterator = 0;
 
 function increaseIteratorBy1() {
@@ -20,3 +22,11 @@ function printIteratorValue() {
 let increaseIterator = debounce(increaseIteratorBy1, 1000);
 
 increaseIterator();
+increaseIterator();
+increaseIterator();
+increaseIterator();
+increaseIterator();
+increaseIterator();
+increaseIterator();
+increaseIterator();
+increaseIterator(); // Should print 'Iterator value 1'
