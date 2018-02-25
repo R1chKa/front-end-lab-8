@@ -1,2 +1,22 @@
-/* Your styles goes here */
-
+li {
+  list-style: none;
+}
+li .empty-text {
+  font-style: italic;
+  margin-left: 10px;
+}
+i {
+  color: #f8d150;
+}
+.file i {
+  color: rgb(196, 196, 196);
+}
+p {
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  margin: 5px;
+}
+p:hover {
+  background-color: rgb(240, 240, 240);
+}
