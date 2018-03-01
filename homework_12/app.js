@@ -11,10 +11,6 @@ thumbnails.appendChild(parentNode);
 
 function buildTanksList(tanksArr, parent) {
   for (let i = 0; i < tanksArr.length; i++) {
-    let div = createElFunc("div");
-    let h3 = createElFunc("h3");
-    let p = createElFunc("p");
-
     let block = createElFunc("div", "tank_block");
     parent.appendChild(block);
 
