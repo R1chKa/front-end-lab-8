@@ -1,24 +1,24 @@
 let rootNode = document.getElementById("root");
 
-let thumbnails = createElFunc("div", "thumbnails");
-rootNode.appendChild(thumbnails);
+function buildTanksList(tanksArr) {
+  let thumbnails = createElFunc("div", "thumbnails");
+  rootNode.appendChild(thumbnails);
 
-let h1 = createElFunc("h1", "header", "Most popular tanks");
-thumbnails.appendChild(h1);
+  let h1 = createElFunc("h1", "header", "Most popular tanks");
+  thumbnails.appendChild(h1);
 
-let parentNode = createElFunc("div", "tanks_list");
-thumbnails.appendChild(parentNode);
+  let tanksList = createElFunc("div", "tanks-list");
+  thumbnails.appendChild(tanksList);
 
-function buildTanksList(tanksArr, parent) {
   for (let i = 0; i < tanksArr.length; i++) {
-    let block = createElFunc("div", "tank_block");
-    parent.appendChild(block);
+    let block = createElFunc("div", "tank-block");
+    tanksList.appendChild(block);
 
     let tPreview = createImgFunc(tanksArr[i].preview, tanksArr[i].model);
     block.appendChild(tPreview);
     tPreview.classList.add("tPreview");
 
-    let info = createElFunc("div", "tank_info");
+    let info = createElFunc("div", "tank-info");
     block.appendChild(info);
 
     let tCountry = createImgFunc(
@@ -54,4 +54,4 @@ function createImgFunc(url, title = "image") {
   return img;
 }
 
-buildTanksList(tanks, parentNode);
+buildTanksList(tanks);
