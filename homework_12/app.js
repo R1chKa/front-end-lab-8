@@ -106,6 +106,16 @@ function createImgFunc(url, title = "image") {
   return img;
 }
 
+function changeHash() {
+  let hash = location.hash.slice(1);
+  tanks.some(function(el) {
+    if (el.model === hash) {
+      rootNode.innerHTML = "";
+      return rootNode.appendChild(buildTankDetails(el));
+    }
+  });
+}
+
 // buildTanksList(tanks);
 // buildTankDetails(tanks);
 rootNode.appendChild(buildTanksList(tanks));
