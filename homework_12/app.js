@@ -46,7 +46,7 @@ function buildTankDetails(tank) {
 
   let previewBlock = createElFunc("div", "preview-block", "", mainContent);
   let tPreviewText = createElFunc("p", "preview-text", "Preview", previewBlock);
-  let tPreview = createImgFunc(tank.preview, tank.model, previewBlock);
+  let tPreview = createImgFunc(tank.preview, "", previewBlock);
   tPreview.classList.add("tPreview");
 
   let details = createElFunc("div", "details-block", "", mainContent);
