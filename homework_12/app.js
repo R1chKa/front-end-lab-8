@@ -89,8 +89,12 @@ function buildTankDetails(tank) {
 
 function createElFunc(tag, elClass = "", insideText = "") {
   let el = document.createElement(tag);
-  el.className = elClass;
-  el.innerHTML = insideText;
+  if (elClass != "") {
+    el.className = elClass;
+  }
+  if (insideText != "") {
+    el.innerHTML = insideText;
+  }
   return el;
 }
 
