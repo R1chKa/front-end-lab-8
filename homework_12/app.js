@@ -9,7 +9,12 @@ function buildTanksList(tanksArr) {
 
   for (let i = 0; i < tanksArr.length; i++) {
     let block = createElFunc("div", "tank-block", "", tanksList);
-    let tPreview = createImgFunc(tanksArr[i].preview, tanksArr[i].model, block);
+    block.setAttribute("title", "Click to details");
+    let tPreview = createImgFunc(
+      tanksArr[i].preview,
+      "Click to details",
+      block
+    );
     tPreview.classList.add("tPreview");
 
     let info = createElFunc("div", "tank-info", "", block);
@@ -20,6 +25,7 @@ function buildTanksList(tanksArr) {
     );
     let tLevel = createElFunc("p", "tLevel", tanksArr[i].level, info);
     let tModel = createElFunc("p", "tModel", tanksArr[i].model, info);
+    tModel.setAttribute("title", tanksArr[i].model);
 
     block.addEventListener("click", function() {
       location.hash = tanksArr[i].model;
