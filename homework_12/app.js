@@ -1,33 +1,25 @@
 let rootNode = document.getElementById("root");
 
 function buildTanksList(tanksArr) {
-  let thumbnails = createElFunc("div", "thumbnails");
-  rootNode.appendChild(thumbnails);
+  let thumbnails = createElFunc("div", "thumbnails", "", rootNode);
 
-  let h1 = createElFunc("h1", "header", "Most popular tanks");
-  thumbnails.appendChild(h1);
+  let h1 = createElFunc("h1", "header", "Most popular tanks", thumbnails);
 
-  let tanksList = createElFunc("div", "tanks-list");
-  thumbnails.appendChild(tanksList);
+  let tanksList = createElFunc("div", "tanks-list", "", thumbnails);
 
   for (let i = 0; i < tanksArr.length; i++) {
-    let block = createElFunc("div", "tank-block");
-    tanksList.appendChild(block);
-    let tPreview = createImgFunc(tanksArr[i].preview, tanksArr[i].model);
-    block.appendChild(tPreview);
+    let block = createElFunc("div", "tank-block", "", tanksList);
+    let tPreview = createImgFunc(tanksArr[i].preview, tanksArr[i].model, block);
     tPreview.classList.add("tPreview");
 
-    let info = createElFunc("div", "tank-info");
-    block.appendChild(info);
+    let info = createElFunc("div", "tank-info", "", block);
     let tCountry = createImgFunc(
       tanksArr[i].country_image,
-      tanksArr[i].country
+      tanksArr[i].country,
+      info
     );
-    info.appendChild(tCountry);
-    let tLevel = createElFunc("p", "tLevel", tanksArr[i].level);
-    info.appendChild(tLevel);
-    let tModel = createElFunc("p", "tModel", tanksArr[i].model);
-    info.appendChild(tModel);
+    let tLevel = createElFunc("p", "tLevel", tanksArr[i].level, info);
+    let tModel = createElFunc("p", "tModel", tanksArr[i].model, info);
 
     block.addEventListener("click", function() {
       location.hash = tanksArr[i].model;
@@ -37,48 +29,37 @@ function buildTanksList(tanksArr) {
 }
 
 function buildTankDetails(tank) {
-  let tankDetails = createElFunc("div", "tank-details");
-  rootNode.appendChild(tankDetails);
+  let tankDetails = createElFunc("div", "tank-details", "", rootNode);
 
-  let info = createElFunc("div", "tank-info");
-  tankDetails.appendChild(info);
-  let tCountry = createImgFunc(tank.country_image, tank.country);
-  info.appendChild(tCountry);
-  let tModel = createElFunc("p", "tModel", tank.model);
-  info.appendChild(tModel);
-  let tLevel = createElFunc("p", "tLevel", `(level ${tank.level})`);
-  info.appendChild(tLevel);
+  let info = createElFunc("div", "tank-info", "", tankDetails);
+  let tCountry = createImgFunc(tank.country_image, tank.country, info);
+  let tModel = createElFunc("p", "tModel", tank.model, info);
+  let tLevel = createElFunc("p", "tLevel", `(level ${tank.level})`, info);
 
-  let mainContent = createElFunc("div", "main-content");
-  tankDetails.appendChild(mainContent);
+  let mainContent = createElFunc("div", "main-content", "", tankDetails);
 
-  let previewBlock = createElFunc("div", "preview-block");
-  mainContent.appendChild(previewBlock);
-  tPreviewText = createElFunc("p", "preview-text", "Preview");
-  previewBlock.appendChild(tPreviewText);
-  let tPreview = createImgFunc(tank.preview, tank.model);
-  previewBlock.appendChild(tPreview);
+  let previewBlock = createElFunc("div", "preview-block", "", mainContent);
+  tPreviewText = createElFunc("p", "preview-text", "Preview", previewBlock);
+  let tPreview = createImgFunc(tank.preview, tank.model, previewBlock);
   tPreview.classList.add("tPreview");
 
-  let details = createElFunc("div", "details-block");
-  mainContent.appendChild(details);
-  let dTable = createElFunc("table", "detaill-table");
-  details.appendChild(dTable);
-  let tCaption = createElFunc("caption", "", "Characteristic");
-  dTable.appendChild(tCaption);
+  let details = createElFunc("div", "details-block", "", mainContent);
+  let dTable = createElFunc("table", "detaill-table", "", details);
+  let tCaption = createElFunc("caption", "", "Characteristic", dTable);
 
   for (let key in tank.details) {
-    let tr = createElFunc("tr");
-    dTable.appendChild(tr);
-    let th = createElFunc("th", "", key);
-    tr.appendChild(th);
-    let td = createElFunc("td", "", tank.details[key]);
-    tr.appendChild(td);
+    let tr = createElFunc("tr", "", "", dTable);
+    let th = createElFunc("th", "", key, tr);
+    let td = createElFunc("td", "", tank.details[key], tr);
   }
 
-  let backLink = createElFunc("a", "back-link", "Back to list view");
+  let backLink = createElFunc(
+    "a",
+    "back-link",
+    "Back to list view",
+    tankDetails
+  );
   backLink.href = "#";
-  tankDetails.appendChild(backLink);
   backLink.addEventListener("click", function() {
     location.hash = "";
     window.history.go();
@@ -87,21 +68,23 @@ function buildTankDetails(tank) {
   return tankDetails;
 }
 
-function createElFunc(tag, elClass = "", insideText = "") {
+function createElFunc(tag, elClass = "", insideText = "", parent) {
   let el = document.createElement(tag);
-  if (elClass != "") {
+  if (elClass !== "") {
     el.className = elClass;
   }
-  if (insideText != "") {
+  if (insideText !== "") {
     el.innerHTML = insideText;
   }
+  el = parent.appendChild(el);
   return el;
 }
 
-function createImgFunc(url, title = "image") {
+function createImgFunc(url, title = "image", parent) {
   let img = document.createElement("img");
   img.setAttribute("src", url);
   img.setAttribute("title", title);
+  img = parent.appendChild(img);
   return img;
 }
 
