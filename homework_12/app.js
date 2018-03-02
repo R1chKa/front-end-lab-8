@@ -13,23 +13,19 @@ function buildTanksList(tanksArr) {
   for (let i = 0; i < tanksArr.length; i++) {
     let block = createElFunc("div", "tank-block");
     tanksList.appendChild(block);
-
     let tPreview = createImgFunc(tanksArr[i].preview, tanksArr[i].model);
     block.appendChild(tPreview);
     tPreview.classList.add("tPreview");
 
     let info = createElFunc("div", "tank-info");
     block.appendChild(info);
-
     let tCountry = createImgFunc(
       tanksArr[i].country_image,
       tanksArr[i].country
     );
     info.appendChild(tCountry);
-
     let tLevel = createElFunc("p", "tLevel", tanksArr[i].level);
     info.appendChild(tLevel);
-
     let tModel = createElFunc("p", "tModel", tanksArr[i].model);
     info.appendChild(tModel);
 
@@ -102,7 +98,6 @@ function createImgFunc(url, title = "image") {
   let img = document.createElement("img");
   img.setAttribute("src", url);
   img.setAttribute("title", title);
-  img.setAttribute("title", title);
   return img;
 }
 
@@ -116,7 +111,5 @@ function changeHash() {
   });
 }
 
-// buildTanksList(tanks);
-// buildTankDetails(tanks);
 rootNode.appendChild(buildTanksList(tanks));
 window.onhashchange = changeHash;
