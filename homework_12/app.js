@@ -37,6 +37,58 @@ function buildTanksList(tanksArr) {
       location.hash = tanksArr[i].model;
     });
   }
+  return thumbnails;
+}
+
+function buildTankDetails(tank) {
+  let tankDetails = createElFunc("div", "tank-details");
+  rootNode.appendChild(tankDetails);
+
+  let info = createElFunc("div", "tank-info");
+  tankDetails.appendChild(info);
+  let tCountry = createImgFunc(tank.country_image, tank.country);
+  info.appendChild(tCountry);
+  let tModel = createElFunc("p", "tModel", tank.model);
+  info.appendChild(tModel);
+  let tLevel = createElFunc("p", "tLevel", `(level ${tank.level})`);
+  info.appendChild(tLevel);
+
+  let mainContent = createElFunc("div", "main-content");
+  tankDetails.appendChild(mainContent);
+
+  let previewBlock = createElFunc("div", "preview-block");
+  mainContent.appendChild(previewBlock);
+  tPreviewText = createElFunc("p", "preview-text", "Preview");
+  previewBlock.appendChild(tPreviewText);
+  let tPreview = createImgFunc(tank.preview, tank.model);
+  previewBlock.appendChild(tPreview);
+  tPreview.classList.add("tPreview");
+
+  let details = createElFunc("div", "details-block");
+  mainContent.appendChild(details);
+  let dTable = createElFunc("table", "detaill-table");
+  details.appendChild(dTable);
+  let tCaption = createElFunc("caption", "", "Characteristic");
+  dTable.appendChild(tCaption);
+
+  for (let key in tank.details) {
+    let tr = createElFunc("tr");
+    dTable.appendChild(tr);
+    let th = createElFunc("th", "", key);
+    tr.appendChild(th);
+    let td = createElFunc("td", "", tank.details[key]);
+    tr.appendChild(td);
+  }
+
+  let backLink = createElFunc("a", "back-link", "Back to list view");
+  backLink.href = "#";
+  tankDetails.appendChild(backLink);
+  backLink.addEventListener("click", function() {
+    location.hash = "";
+    window.history.go();
+  });
+
+  return tankDetails;
 }
 
 function createElFunc(tag, elClass = "", insideText = "") {
@@ -54,4 +106,7 @@ function createImgFunc(url, title = "image") {
   return img;
 }
 
-buildTanksList(tanks);
+// buildTanksList(tanks);
+// buildTankDetails(tanks);
+rootNode.appendChild(buildTanksList(tanks));
+window.onhashchange = changeHash;
